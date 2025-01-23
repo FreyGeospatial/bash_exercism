@@ -2,10 +2,10 @@
 
 main () {
     if [ "$#" -eq 0 ] || [ "$#" -gt 1 ]; then
-	echo "You must pass exactly one argument to this function" >&2    
+	echo "Usage: error_handling.sh <person>" >&2    
 	exit 1
     else
-	echo "Hello, $1!"
+	echo "Hello, $1"
     fi
 
 }
